@@ -8,4 +8,5 @@ set -x \
 && sudo cp -p /etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/000-default.conf.orig \
 && sudo cp 000-default.conf /etc/apache2/sites-enabled/000-default.conf \
 && sudo a2ensite 000-default.conf \
+&& sudo service apache2 restart \
 && set +x
